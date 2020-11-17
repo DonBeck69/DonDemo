@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoApi", "DemoApi\DemoApi.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfBuilder", "PdfBuilder\PdfBuilder.csproj", "{177344AC-2A2D-4860-9D52-EE27CE28060C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoDocFunction", "DemoDocFunction\DemoDocFunction.csproj", "{BCFF2DAE-7DF4-42F3-93A4-730CB9607AE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoDocFunction", "DemoDocFunction\DemoDocFunction.csproj", "{BCFF2DAE-7DF4-42F3-93A4-730CB9607AE4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocFunctionTests", "DocFunctionTests\DocFunctionTests.csproj", "{B28E9547-E439-4526-BB2F-95699A4431E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoObjects", "DemoObjects\DemoObjects.csproj", "{8A20987E-4112-48C8-AC2E-969D2419F966}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B28E9547-E439-4526-BB2F-95699A4431E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B28E9547-E439-4526-BB2F-95699A4431E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B28E9547-E439-4526-BB2F-95699A4431E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A20987E-4112-48C8-AC2E-969D2419F966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A20987E-4112-48C8-AC2E-969D2419F966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A20987E-4112-48C8-AC2E-969D2419F966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A20987E-4112-48C8-AC2E-969D2419F966}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

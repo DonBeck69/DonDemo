@@ -104,6 +104,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DemoObjects\DemoObjects.csproj">
+      <Project>{8a20987e-4112-48c8-ac2e-969d2419f966}</Project>
+      <Name>DemoObjects</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PdfBuilder\PdfBuilder.csproj">
       <Project>{177344AC-2A2D-4860-9D52-EE27CE28060C}</Project>
       <Name>PdfBuilder</Name>

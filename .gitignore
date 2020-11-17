@@ -10,4 +10,6 @@ DocFunctionTests/bin
 DocFunctionTests/obj
 PdfBuilder/bin
 PdfBuilder/obj
+DemoObjects/bin
+DemoObjects/obj
 packages/
