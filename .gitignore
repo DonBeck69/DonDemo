@@ -1,0 +1,13 @@
+.git
+.vs
+.vscode
+CClientApp/
+ClientApp/dist
+CLientApp/node_modules
+DemoApi/bin
+DemoApi/obj
+DocFunctionTests/bin
+DocFunctionTests/obj
+PdfBuilder/bin
+PdfBuilder/obj
+packages/
