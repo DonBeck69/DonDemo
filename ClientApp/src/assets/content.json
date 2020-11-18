@@ -1,0 +1,32 @@
+{
+    "contentPages": [
+        {
+            "rout": "pages/page-one",
+            "heading": "First page",
+            "paragraph": "some content"
+        },
+        {
+            "rout": "pages/page-two",
+            "heading": "Second page",
+            "paragraph": "some more content"
+        }
+    ],
+    "contentLists": [
+        {
+            "rout": "lists/list-one",
+            "items": [
+                "1 one",
+                "1 two",
+                "1 three"
+            ]
+        },
+        {
+            "rout": "lists/list-two",
+            "items": [
+                "2 one",
+                "2 two",
+                "2 three"
+            ]
+        }
+    ]
+}

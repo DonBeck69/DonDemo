@@ -1,0 +1,10 @@
+{
+    "pages": [
+        "pages/page-one",
+        "pages/page-two"
+    ],
+    "lists": [
+        "lists/list-one",
+        "lists/list-two"
+    ]
+}
