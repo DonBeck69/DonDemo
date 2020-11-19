@@ -1,5 +1,5 @@
-
-export class routing {
-    public pages: Array<string>
-    public lists: Array<string>
+import {RoutData} from "./RoutData";
+export class Routing {
+    public pages: Array<RoutData>
+    public lists: Array<RoutData>
 }

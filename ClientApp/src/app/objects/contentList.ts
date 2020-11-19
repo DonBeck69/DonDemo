@@ -1,5 +1,5 @@
-export class contentList {
-    public constructor(init?: Partial<contentList>) {
+export class ContentList {
+    public constructor(init?: Partial<ContentList>) {
         Object.assign(this, init);
     }
     

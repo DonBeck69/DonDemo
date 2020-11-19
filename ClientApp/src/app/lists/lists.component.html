@@ -1,1 +1,5 @@
-<p>lists works!</p>
+<h1>lists</h1>
+<ul class="list-group">
+    <li *ngFor="let l of this._listContent.items; let i = index" [attr.data-index]="i" class="list-group-item">{{l}}
+    </li>
+</ul>

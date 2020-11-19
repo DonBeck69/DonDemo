@@ -1,10 +1,26 @@
 {
     "pages": [
-        "pages/page-one",
-        "pages/page-two"
+        {
+            "rout": "pages/page-one",
+            "name": "page one"
+        },
+        {
+            "rout": "pages/page-two",
+            "name": "page two"
+        },
+        {
+            "rout": "pages/page-three",
+            "name": "page three"
+        }
     ],
     "lists": [
-        "lists/list-one",
-        "lists/list-two"
+        {
+            "rout": "lists/list-one",
+            "name": "list one"
+        },
+        {
+            "rout": "lists/list-two",
+            "name": "list two"
+        }
     ]
 }

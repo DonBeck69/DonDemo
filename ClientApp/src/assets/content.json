@@ -9,6 +9,11 @@
             "rout": "pages/page-two",
             "heading": "Second page",
             "paragraph": "some more content"
+        },        
+        {
+            "rout": "pages/page-three",
+            "heading": "fird page",
+            "paragraph": "some more astounding content"
         }
     ],
     "contentLists": [

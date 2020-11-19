@@ -1,8 +1,8 @@
-import { contentPage } from "./contentPage";
-import { contentList } from "./contentList";
+import { ContentPage } from "./ContentPage";
+import { ContentList } from "./ContentList";
 
 
-export class content {
-    public contentPages: Array<contentPage>;
-    public contentLists: Array<contentList>;
+export class Content {
+    public contentPages: Array<ContentPage>;
+    public contentLists: Array<ContentList>;
 }

@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from "@angular/router";
 //import { content} from "./objects/content";
-import { routing} from "./objects/routing";
+import { Routing} from "./objects/Routing";
+import { RoutData } from "./objects/RoutData";
 import { PagesComponent } from "./pages/pages.component";
 import { ListsComponent } from "./lists/lists.component";
 
@@ -14,7 +15,7 @@ import { ListsComponent } from "./lists/lists.component";
 export class AppComponent implements OnInit {
   //title = 'ClientApp';
   
-  //public _htttpClient: HttpClient;
+  public _routing: Routing;
 
   constructor(private http: HttpClient, private router: Router){
     //this._htttpClient = http;
@@ -22,18 +23,21 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit(): void {
-      this.http.get<routing>("assets/routing.json").subscribe(rout => {
-        rout.lists.forEach((list: string) => {
-          this.router.config.push({ path: list, component: ListsComponent });
+      this.http.get<Routing>("assets/routing.json").subscribe((rout: Routing) => {
+        this._routing = rout;
+        rout.lists.forEach((list: RoutData) => {
+          this.router.config.push({ path: list.rout, component: ListsComponent, runGuardsAndResolvers: "always" });
         });
-        rout.pages.forEach((page: string) => {
-          this.router.config.push({ path: page, component: PagesComponent });
+        rout.pages.forEach((page: RoutData) => {
+          this.router.config.push({ path: page.rout, component: PagesComponent, runGuardsAndResolvers: "always" });
         });
+
+        console.log(this.router.config);
     });
   }
 
-  public btnClick() {
-    this.router.navigateByUrl("pages/page-one");
+  public btnClick(rout: string) {
+    this.router.navigateByUrl(rout);
   }
 
 }

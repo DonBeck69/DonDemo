@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from "@angular/router";
-import { content } from "../objects/content";
-import { contentPage } from "../objects/contentPage";
+import { Content } from "../objects/Content";
+import { ContentPage } from "../objects/ContentPage";
 
 @Component({
   selector: 'app-pages',
@@ -11,18 +11,20 @@ import { contentPage } from "../objects/contentPage";
 })
 export class PagesComponent implements OnInit {
 
-  public _pageContent: contentPage;
+  public _pageContent: ContentPage;
 
   constructor(
     private router: Router,
     private http: HttpClient
-  ) { }
+  ) { 
+    console.log("page says hi!");
+  }
 
   ngOnInit(): void {
-    this.http.get<content>("assets/content.json").subscribe((result: content) => {
+    this.http.get<Content>("assets/content.json").subscribe((result: Content) => {
       let rout: string = this.router.url;
       rout = rout.substring(1, rout.length);
-      this._pageContent = result.contentPages.find((page: contentPage) => {
+      this._pageContent = result.contentPages.find((page: ContentPage) => {
         return page.rout === rout;
       });
     });

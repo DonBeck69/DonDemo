@@ -1,6 +1,6 @@
-export class contentPage {
+export class ContentPage {
 
-    public constructor(init?: Partial<contentPage>) {
+    public constructor(init?: Partial<ContentPage>) {
         Object.assign(this, init);
     }
     public rout: string;
