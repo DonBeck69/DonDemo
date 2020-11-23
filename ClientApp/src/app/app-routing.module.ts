@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-const routes: Routes = [];
+import { GetpdfComponent } from "./getpdf/getpdf.component";
+const routes: Routes = [
+  {
+    path: "pdf",
+    component: GetpdfComponent,
+    runGuardsAndResolvers: "always"
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
