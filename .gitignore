@@ -8,6 +8,9 @@ DemoApi/bin
 DemoApi/obj
 DocFunctionTests/bin
 DocFunctionTests/obj
+DemoDocFunction/*.user
+DemoDocFunction/bin
+DemoDocFunction/obj
 PdfBuilder/bin
 PdfBuilder/obj
 DemoObjects/bin
